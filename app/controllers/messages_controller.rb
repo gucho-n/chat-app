@@ -20,6 +20,11 @@ class MessagesController < ApplicationController
    private
  
    def message_params
+<<<<<<< HEAD
     params.require(:message).permit(:content, :image).merge(user_id: current_user.id)
   end
+=======
+     params.require(:message).permit(:content, :image).merge(user_id: current_user.id)
+   end
+>>>>>>> モデルテストの実装
  end
